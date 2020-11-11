@@ -10,17 +10,6 @@ fn main(){
     // Creating endpoints of the channel
     let (tx, rx): (Sender<i32>, Receiver<i32>) = mpsc::channel();
 
-
-
-
-    
-
-
-
-
-
-
-
     for thread_no in 0..NO_THREADS {
         //Cloning the sender
         let thread_tx = tx.clone();
